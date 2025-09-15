@@ -1,15 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { FiGithub } from "react-icons/fi";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -19,9 +11,38 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+        {/* Social Icons - Left */}
+        <div className="fixed bottom-0 left-10 flex flex-col items-center gap-5">
+          <a href="#" className=" text-secondary transition-transform duration-300 ease-in-out 
+                hover:text-[#64ffda] hover:-translate-y-1">
+            <FiGithub className=" " />
+          </a>
+          <a href="#" className="text-secondary transition-transform duration-300 ease-in-out 
+                hover:text-[#64ffda] hover:-translate-y-1">
+            <FaFacebookF className="" />
+          </a>
+          <a
+            href="#"
+            className="text-secondary transition-transform duration-300 ease-in-out 
+                hover:text-[#64ffda] hover:-translate-y-1"
+          >
+            <FaLinkedinIn className=" " />
+          </a>
+
+          <div className="w-[1px] h-24 bg-secondary"></div>
+        </div>
+
+        {/* Email - Right */}
+        <div className="fixed bottom-0 right-10 flex flex-col items-center gap-5">
+          <p
+            className="text-secondary text-xs rotate-90 fixed bottom-48 tracking-widest transition-transform duration-300 ease-in-out 
+                hover:text-[#64ffda] hover:-translate-y-2"
+          >
+            brittany.chiang@gmail.com
+          </p>
+          <div className="w-[1px] h-24 bg-secondary"></div>
+        </div>
         {children}
       </body>
     </html>
