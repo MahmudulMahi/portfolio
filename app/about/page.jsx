@@ -1,11 +1,12 @@
+import Image from "next/image";
 import React from "react";
-import Image from "next/image"; // If you’re using Next.js
-import profilePic from "../public/profile.jpg"; // replace with your image
+
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-[#0a192f] text-[#ccd6f6]">
+    <section id="about" className="py-24 bg-[#0a192f] text-[#ccd6f6]">
       <div className="max-w-5xl mx-auto px-6 md:px-0 grid md:grid-cols-2 gap-12 items-center">
+        
         {/* Left Content */}
         <div>
           <h2 className="text-2xl font-bold mb-6">
@@ -56,8 +57,10 @@ const About = () => {
         <div className="relative w-64 h-64 mx-auto">
           <div className="absolute top-4 left-4 w-full h-full border-2 border-[#64ffda] rounded-md"></div>
           <Image
-            src={profilePic}
+            src="/image/mahmudul.jpg"   
             alt="Profile Picture"
+            width={256}
+            height={256}
             className="relative rounded-md object-cover w-full h-full"
           />
         </div>
