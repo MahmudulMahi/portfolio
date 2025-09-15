@@ -5,6 +5,7 @@ import Hero from "./components/hero";
 import Experience from "./components/experience";
 import About from "./components/about";
 import Projects from "./components/card/projects";
+import Skills from "./components/skill";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <About></About>
         <Experience></Experience>
         <Projects></Projects>
+        <Skills></Skills>
       </div>
     </div>
   );
