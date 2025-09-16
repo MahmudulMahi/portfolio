@@ -22,7 +22,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-[#0a192f]">
+    <section id="project" className="py-20 bg-[#0a192f]">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-[#ccd6f6] mb-12">
           <span className="text-[#64ffda]">03.</span> Some Things I’ve Built

@@ -6,6 +6,7 @@ import Experience from "./components/experience";
 import About from "./components/about";
 import Projects from "./components/card/projects";
 import Skills from "./components/skill";
+import GetInTouch from "./components/mail";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Experience></Experience>
         <Projects></Projects>
         <Skills></Skills>
+        <GetInTouch></GetInTouch>
       </div>
     </div>
   );

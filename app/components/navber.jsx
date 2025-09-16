@@ -54,8 +54,8 @@ const Navbar = () => {
           <Link href="#experience" className="text-[#64ffda] hover:text-white">
             02. Experience
           </Link>
-          <Link href="#work" className="text-[#64ffda] hover:text-white">
-            03. Work
+          <Link href="#project" className="text-[#64ffda] hover:text-white">
+            03. Project
           </Link>
           <Link href="#contact" className="text-[#64ffda] hover:text-white">
             04. Contact
