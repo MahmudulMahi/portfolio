@@ -4,15 +4,16 @@ import Hero from "./components/hero";
 
 import Experience from "./components/experience";
 import About from "./components/about";
-import Projects from "./components/card/projects";
+
 import Skills from "./components/skill";
 import GetInTouch from "./components/mail";
+import Projects from "./components/card/projects";
 
 export default function Home() {
   return (
     <div className="">
       <Navber></Navber>
-      <div className="max-w-6xl pl-20 mx-auto ">
+      <div className="max-w-5xl  mx-auto  ">
         <Hero></Hero>
         <About></About>
         <Experience></Experience>

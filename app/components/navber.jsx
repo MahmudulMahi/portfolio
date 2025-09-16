@@ -2,9 +2,18 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const links = [
+    { href: "#about", label: "About", number: "01." },
+    { href: "#experience", label: "Experience", number: "02." },
+    { href: "#project", label: "Project", number: "03." },
+    { href: "#contact", label: "Contact", number: "04." },
+  ];
 
   return (
     <>
@@ -47,18 +56,18 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center gap-6 text-sm">
+        {/* <nav className="hidden md:flex items-center gap-6 text-sm">
           <Link href="#about" className="text-[#64ffda] hover:text-white">
-            01. About
+            01. <span className="text-white">About</span>
           </Link>
           <Link href="#experience" className="text-[#64ffda] hover:text-white">
-            02. Experience
+            02. <span className="text-white">Experience</span>
           </Link>
           <Link href="#project" className="text-[#64ffda] hover:text-white">
-            03. Project
+            03. <span className="text-white">Project</span>
           </Link>
           <Link href="#contact" className="text-[#64ffda] hover:text-white">
-            04. Contact
+            04. <span className="text-white">Contact</span>
           </Link>
           <Link
             href="/resume.pdf"
@@ -72,6 +81,19 @@ const Navbar = () => {
           >
             Resume
           </Link>
+        </nav> */}
+        <nav className="flex gap-6">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`hover:text-white transition-colors ${
+                pathname === link.href ? "text-[#64ffda]" : "text-white"
+              }`}
+            >
+              {link.number} <span>{link.label}</span>
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -123,8 +145,6 @@ const Navbar = () => {
           </div>
         )}
       </header>
-
-  
     </>
   );
 };

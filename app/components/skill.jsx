@@ -8,7 +8,7 @@ import {
   FaGitAlt,
   FaGithub,
 } from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiNextdotjs, SiTypescript, SiExpress } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
@@ -20,6 +20,7 @@ const Skills = () => {
     { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
     { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+    { name: "Express.js", icon: <SiExpress className="text-gray-500" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
     { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
     { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
