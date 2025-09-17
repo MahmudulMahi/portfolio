@@ -4,7 +4,7 @@ import React from "react";
 
 const GetInTouch = () => {
   return (
-    <section id='contact' className="bg-[#0a192f] text-center py-20 px-4">
+    <section id='contact' className="bg-[#0a192f] text-center mt-20 px-4 md:px-4 lg:px-0 ">
       {/* Section number */}
       <p className="text-teal-400 text-sm font-mono mb-4">
         04. What’s Next?

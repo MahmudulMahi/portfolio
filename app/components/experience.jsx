@@ -3,9 +3,9 @@ import React, { useState } from "react";
 
 const jobs = [
   {
-    company: "Upstatement",
-    role: "Frontend Developer @ Upstatement",
-    duration: "2020 – Present",
+    company: "Zan Vision Labs",
+    role: "Frontend Developer @ Zan Vision Labs",
+    duration: "2025 – Present",
     details: [
       "Built and maintained accessible, responsive web apps using React and Next.js",
       "Worked closely with designers and backend engineers to create seamless digital experiences",
@@ -13,43 +13,13 @@ const jobs = [
     ],
   },
   {
-    company: "Apple",
-    role: "Software Engineer Intern @ Apple",
-    duration: "2019 – 2020",
+    company: "Visionary Tech Solutions",
+    role: "Jr Frontend Developer @ Visionary Tech Solutions",
+    duration: "2023 – 2024",
     details: [
-      "Collaborated on large-scale internal tools for Apple’s retail systems",
+      "Assisted in developing responsive web pages with cross-browser compatibility",
       "Implemented UI components in React and TypeScript",
-      "Optimized rendering performance for dashboards used by thousands of employees",
-    ],
-  },
-  {
-    company: "Scout Studio",
-    role: "Designer & Developer @ Scout Studio",
-    duration: "2017 – 2019",
-    details: [
-      "Designed and developed brand websites for student-led projects",
-      "Introduced reusable component libraries with Tailwind CSS",
-      "Mentored junior developers in frontend best practices",
-    ],
-  },
-  {
-    company: "Starry",
-    role: "Web Developer @ Starry",
-    duration: "2016 – 2017",
-    details: [
-      "Created landing pages and product pages with modern UI/UX patterns",
-      "Maintained company blog and marketing websites",
-      "Improved SEO performance and accessibility compliance",
-    ],
-  },
-  {
-    company: "MullenLowe",
-    role: "Creative Technologist Co-op @ MullenLowe",
-    duration: "July – December 2015",
-    details: [
-      "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-      "Performed QA tests on various sites to ensure cross-browser compatibility and mobile responsiveness",
-      "Clients included JetBlue, Lovesac, U.S. Cellular, and U.S. Department of Defense",
+      "Collaborated with senior developers to enhance code quality and maintainabilit",
     ],
   },
 ];
@@ -58,10 +28,10 @@ const Experience = () => {
   const [selectedJob, setSelectedJob] = useState(jobs[0]);
 
   return (
-    <section id="experience" className="py-20 bg-[#0a192f] text-[#ccd6f6]">
-      <div className="max-w-5xl mx-auto px-6 md:px-0">
+    <section id="experience" className="mt-20 bg-[#0a192f] text-[#ccd6f6] px-4 md:px-4 lg:px-0">
+      <div className="max-w-5xl mx-auto ">
         {/* Section Title */}
-        <h2 className="text-2xl font-bold mb-10 flex items-center">
+        <h2 className="text-2xl font-bold mb-10 ">
           <span className="text-[#64ffda] mr-2">02.</span> Where I’ve Worked
           <span className="ml-6 flex-1 h-[1px] bg-gray-700"></span>
         </h2>

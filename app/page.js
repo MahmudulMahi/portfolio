@@ -8,19 +8,25 @@ import About from "./components/about";
 import Skills from "./components/skill";
 import GetInTouch from "./components/mail";
 import Projects from "./components/card/projects";
+import Footer from "./components/footer";
+import Head from "./head";
 
 export default function Home() {
   return (
-    <div className="">
+    <>
+    
+    <div className="overflow-hidden">
       <Navber></Navber>
-      <div className="max-w-5xl  mx-auto  ">
+      <div className="max-w-4xl xl:max-w-5xl mx-auto   ">
         <Hero></Hero>
         <About></About>
         <Experience></Experience>
         <Projects></Projects>
         <Skills></Skills>
         <GetInTouch></GetInTouch>
+        <Footer></Footer>
       </div>
     </div>
+    </>
   );
 }

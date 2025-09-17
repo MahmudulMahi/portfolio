@@ -27,8 +27,8 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-[#0a192f] text-[#ccd6f6]">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="skill" className="mt-20 bg-[#0a192f] text-[#ccd6f6] px-4 md:px-4 lg:px-0">
+      <div className="max-w-6xl mx-auto ">
         {/* Title */}
         <h2 className="text-3xl font-bold mb-12">
           <span className="text-[#64ffda]">04.</span> Skills

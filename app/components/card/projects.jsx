@@ -103,13 +103,13 @@ export default function Projects() {
   const displayedProjects = showAll ? projects : projects.slice(0, 6);
 
   return (
-    <section id="project" className="py-20 bg-[#0a192f]">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="project" className="mt-20 bg-[#0a192f] px-4 md:px-4 lg:px-0">
+      <div className="max-w-6xl mx-auto ">
         <h2 className="text-3xl font-bold text-[#ccd6f6] mb-12">
           <span className="text-[#64ffda]">03.</span> Some Things I’ve Built
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayedProjects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
