@@ -6,9 +6,12 @@ import Head from "./head";
 
 export const metadata = {
   title: "Md Mahmudul Islam",
-  description: "Welcome to my website",
+  icons: {
+    icon: "/favicon.png", // 32x32 PNG
+    shortcut: "/favicon-16x16.png",
+    apple: "/favicon-32x32.png",
+  },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
