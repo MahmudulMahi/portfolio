@@ -145,7 +145,7 @@ const Navbar = () => {
           </span>
         </Link>
         <Link
-          href="/resume.pdf"
+          href="https://drive.google.com/file/d/1Fxq0xR6bRn1WHOgl7AbYrp62wRTy2HE0/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="ml-4 px-4 py-2 border border-[#64ffda] rounded-xs text-[#64ffda] font-medium
