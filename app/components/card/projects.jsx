@@ -8,6 +8,15 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "ERP Website",
+      description:
+        "Enterprise Resource Planning (ERP) platform designed to streamline business operations by managing modules such as sales, inventory, procurement, HR, finance, and reporting through a centralized and user-friendly system.",
+      tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDb"],
+      github: "",
+      live: "",
+      image: "/image/erp.png",
+    },
+    {
       title: "Newspaper Website",
       description:
         "Newspaper Website is an online platform for delivering news, articles, and updates in a user-friendly, responsive format, allowing readers to access information quickly and stay informed across devices.",
