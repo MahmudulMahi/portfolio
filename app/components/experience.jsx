@@ -3,9 +3,19 @@ import React, { useState } from "react";
 
 const jobs = [
   {
+    company: "AKK System",
+    role: "Software Engineer @ AKK System",
+    duration: "2026 – Present",
+    details: [
+      "Developing scalable ERP applications using React.js, Next.js, Node.js, and Express.js",
+      "Designing and integrating RESTful APIs, authentication, role-based access control, payment integrations, and transaction-based business workflows",
+      "Building responsive, reusable UI components and collaborating with backend developers, QA engineers, and business teams to deliver reliable enterprise solutions",
+    ],
+  },
+  {
     company: "Zan Vision Labs",
     role: "Frontend Developer @ Zan Vision Labs",
-    duration: "2025 – Present",
+    duration: "2025 – 2026",
     details: [
       "Built and maintained accessible, responsive web apps using React and Next.js",
       "Worked closely with designers and backend engineers to create seamless digital experiences",
@@ -15,7 +25,7 @@ const jobs = [
   {
     company: "Visionary Tech Solutions",
     role: "Jr Frontend Developer @ Visionary Tech Solutions",
-    duration: "2023 – 2024",
+    duration: "2022 – 2024",
     details: [
       "Assisted in developing responsive web pages with cross-browser compatibility",
       "Implemented UI components in React and TypeScript",
@@ -28,7 +38,10 @@ const Experience = () => {
   const [selectedJob, setSelectedJob] = useState(jobs[0]);
 
   return (
-    <section id="experience" className="mt-20 bg-[#0a192f] text-[#ccd6f6] px-4 md:px-4 lg:px-0">
+    <section
+      id="experience"
+      className="mt-20 bg-[#0a192f] text-[#ccd6f6] px-4 md:px-4 lg:px-0"
+    >
       <div className="max-w-5xl mx-auto ">
         {/* Section Title */}
         <h2 className="text-2xl font-bold mb-10 ">
@@ -61,9 +74,7 @@ const Experience = () => {
               {selectedJob.role.split("@")[0]}{" "}
               <span className="text-[#64ffda]">@ {selectedJob.company}</span>
             </h3>
-            <p className="text-gray-400 text-sm mb-4">
-              {selectedJob.duration}
-            </p>
+            <p className="text-gray-400 text-sm mb-4">{selectedJob.duration}</p>
 
             <ul className="space-y-3 text-gray-400 text-sm">
               {selectedJob.details.map((item, i) => (

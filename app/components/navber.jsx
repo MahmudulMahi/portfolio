@@ -9,6 +9,8 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  console.log("active",active)
+
   // Detect active section
   useEffect(() => {
     const handleScroll = () => {
