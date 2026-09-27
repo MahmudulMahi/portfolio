@@ -13,6 +13,16 @@ const jobs = [
     ],
   },
   {
+    company: "AKK System",
+    role: "Software Engineer @ AKK System",
+    duration: "2026 – Present",
+    details: [
+      "Developing scalable ERP applications using React.js, Next.js, Node.js, and Express.js",
+      "Designing and integrating RESTful APIs, authentication, role-based access control, payment integrations, and transaction-based business workflows",
+      "Building responsive, reusable UI components and collaborating with backend developers, QA engineers, and business teams to deliver reliable enterprise solutions",
+    ],
+  },
+  {
     company: "Zan Vision Labs",
     role: "Frontend Developer @ Zan Vision Labs",
     duration: "2025 – 2026",
